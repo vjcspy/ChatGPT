@@ -11,7 +11,7 @@ process.on("uncaughtException", function (err) {
 
 // Middlewares
 app.use(corsMiddleware);
-app.use(rateLimitMiddleware);
+// app.use(rateLimitMiddleware);
 app.use(json());
 app.use(urlencoded({ extended: true }));
 
