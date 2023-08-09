@@ -1,5 +1,5 @@
 // Server configuration
-export const SERVER_PORT = process.env.SERVER_PORT || 3030; // Server port
+export const SERVER_PORT = process.env.SERVER_PORT || 8080; // Server port
 export const DEBUG = false; // Debug mode
 
 // Prompt Moderation before sending to OpenAI
