@@ -4,6 +4,7 @@ import { streamCompletion, generateId, getOpenAIKey } from "./functions.js"
 import { DEBUG, MODERATION } from "./config.js";
 
 async function completions(req, res) {
+    console.log('call completions');
     let orgId = generateId();
     let key = getOpenAIKey();
 
@@ -132,6 +133,7 @@ async function completions(req, res) {
 }
 
 async function chatCompletions(req, res) {
+    console.log('call chatCompletions');
     let orgId = generateId();
     let key = getOpenAIKey();
 
